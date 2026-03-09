@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+
+<h2>Student Form</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    Name:
+    <input type="text" name="name"><br><br>
+
+    Department:
+    <input type="text" name="dept"><br><br>
+
+    Roll No:
+    <input type="number" name="rollno"><br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
